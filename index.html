@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0c0405">
+<meta name="robots" content="noindex,nofollow">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="스위스 예산">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" type="image/png" href="icon-192.png">
+<title>스위스 건축여행 예산</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300..700&display=swap">
+<style>
+/*@pixfont*/@font-face{font-family:'DigiPx';src:url(data:font/ttf;base64,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) format('truetype');font-weight:400;font-style:normal;font-display:block}/*@end*/
+:root{
+  /* 구성: 빨강기 도는 검정 바탕에 흰 글자와 빨간·흰 꽃잎. 로고 십자가 팔 두께(6칸)에 글자 키(6칸)를 맞춘 칸 단위(--u) 격자. 위에서부터 로고, total, 꽃잎 원. */
+  --bg:#0c0405; --red:#d92b1f; --red-hi:#ff5848; --white:#fff; --ink:#1b0e0c;
+  --soft:rgba(255,255,255,.72); --line:rgba(255,255,255,.16);
+  --u:2px; --ub:1.4px; /* --ub: 로고·제목 칸 크기 */
+  --f:'Pretendard Variable','Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif;
+  --px:'DigiPx','Pretendard Variable','Pretendard','Noto Sans KR',monospace;
+  color-scheme:dark;
+}
+@media (min-width:900px){:root{--u:3px;--ub:1.8px}}
+html,body{height:100%}
+body{background:
+  radial-gradient(70% 38% at 58% 104%,#b3081f 0%,rgba(130,5,22,.75) 36%,rgba(60,2,12,0) 72%) fixed,
+  radial-gradient(42% 34% at 6% 96%,#000 0%,rgba(0,0,0,0) 72%) fixed,
+  radial-gradient(44% 30% at 100% 100%,#000 0%,rgba(0,0,0,0) 70%) fixed,
+  radial-gradient(90% 55% at 15% 52%,rgba(120,6,24,.55) 0%,rgba(120,6,24,0) 70%) fixed,
+  linear-gradient(180deg,#040102 0%,#1a0207 38%,#42040d 72%,#5a0412 100%) fixed,
+  var(--bg);color:var(--white);font-family:var(--f);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--white);outline-offset:2px}
+
+/* 바탕: 빨강기 도는 검정(body 에 직접), 아래쪽에서 번지는 붉은 빛, 고운 입자(::after) */
+body::after{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.2;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .6 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+#app{min-height:100%;display:flex;flex-direction:column;gap:18px;padding-inline:16px;padding-block:18px 12px}
+/* 로고 줄은 화면 맨 위 왼쪽에 붙이고, 나머지(합계·그래프)는 가운데 일정한 폭 안에 둔다 */
+#app>*:not(#top){width:100%;max-width:1240px;margin-inline:auto}
+@media (min-width:900px){#app{padding-inline:28px}}
+
+/* 첫 화면: 빨강 바탕에 흰 십자가. 스크립트가 없어도 스스로 사라진다 */
+#splash{position:fixed;inset:0;z-index:50;background:var(--red);display:grid;place-items:center;animation:splash-out .55s cubic-bezier(.7,0,.2,1) 1.05s forwards}
+#splash svg{width:min(34vw,160px);height:auto;animation:cross-in .6s cubic-bezier(.2,.8,.2,1) both}
+@keyframes cross-in{from{opacity:0;transform:scale(.82)}to{opacity:1;transform:none}}
+@keyframes splash-out{to{transform:translateY(-100%);visibility:hidden}}
+
+/* 머리글: 십자가 팔(6칸)과 글자 키(6칸)가 같은 줄에 놓인다 */
+#top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;min-height:calc(var(--ub)*20)}
+.brand{display:flex;align-items:flex-start;gap:calc(var(--ub)*5);min-width:0}
+.brand svg{width:calc(var(--ub)*20);height:calc(var(--ub)*20);flex:none;display:block;fill:var(--white)}
+.brand b{font-family:var(--px);font-weight:400;font-size:calc(var(--ub)*10);line-height:calc(var(--ub)*20);white-space:nowrap;text-transform:none}
+#focus-block{display:flex;align-items:center;gap:14px;min-width:0}
+.ftitle{display:flex;align-items:center;gap:10px;min-width:0;flex-wrap:wrap}
+#f-ico{width:22px;height:22px;flex:none;fill:var(--white)}
+#f-name{font-weight:600;font-size:clamp(20px,4vw,28px);letter-spacing:-.02em;line-height:1.1}
+#f-amt{font-weight:500;font-size:clamp(14px,2.4vw,18px);color:var(--soft)}
+#f-amt .px{font-family:var(--px);font-weight:400;font-size:1.5em;color:var(--white);margin-right:3px}
+#f-share{color:var(--soft);font-size:12px;margin-top:2px}
+.rise{animation:rise .5s cubic-bezier(.2,.8,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.btn{display:inline-flex;align-items:center;gap:6px;font:500 13px/1 var(--f);background:transparent;border:1px solid rgba(255,255,255,.5);border-radius:999px;padding:10px 15px;cursor:pointer;white-space:nowrap;color:var(--white);transition:background .2s,transform .2s}
+.btn:hover{background:rgba(255,255,255,.12)}
+.btn:active{transform:scale(.97)}
+
+/* 합계: 카드 없이 바탕 위에 바로 */
+.total{margin:0;display:flex;flex-direction:column;align-items:center;gap:calc(var(--u)*3);text-align:center;font-weight:400}
+/* 픽셀 글자는 오른쪽에 한 칸 여백이 붙어 있어서, 같은 폭만큼 왼쪽에 채워야 눈으로 봐도 정중앙이다 */
+.tl{font-family:var(--px);font-size:calc(var(--u)*10);line-height:1;color:var(--soft);white-space:nowrap;padding-left:.1em}
+.tn{font-family:var(--px);font-size:clamp(40px,8.4vw,120px);line-height:1;color:var(--white);white-space:nowrap;padding-left:.1em}
+
+/* 무대 */
+#stage{position:relative;flex:1 1 auto;min-height:420px;overflow:hidden}
+#svg{position:absolute;inset:0;width:100%;height:100%;display:block;-webkit-tap-highlight-color:transparent;user-select:none;-webkit-user-select:none;
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 26px,#000 100%),linear-gradient(to right,transparent 0,#000 12px,#000 calc(100% - 12px),transparent 100%);
+  -webkit-mask-composite:source-in;
+  mask-image:linear-gradient(to bottom,transparent 0,#000 26px,#000 100%),linear-gradient(to right,transparent 0,#000 12px,#000 calc(100% - 12px),transparent 100%);
+  mask-composite:intersect}
+.cat,.sec{cursor:pointer;outline:none}
+.cat:focus-visible .dark,.sec:focus-visible .sp{stroke:var(--white)}
+.cat{transform-origin:0 0;transition:transform .35s cubic-bezier(.2,.8,.2,1),filter .25s}
+.plab text,.slab text{pointer-events:none}
+.dark{fill:var(--red);stroke:var(--red)}
+.light{fill:var(--white);stroke:var(--white)}
+.pn{font-family:var(--px);font-weight:400}
+.pl{font-family:var(--f);font-weight:500;letter-spacing:-.01em}
+.plab.in text,.plab.in .pico{fill:var(--red)}
+.plab.out text,.plab.out .pico{fill:var(--white)}
+.sp{fill:var(--white);stroke:var(--white);stroke-width:36;stroke-linejoin:round;transition:fill .3s,stroke .3s}
+.ring{fill:var(--red-hi);stroke:var(--red-hi);stroke-width:46;stroke-linejoin:round;opacity:0;transition:opacity .25s}
+.sec-in{transition:opacity .35s,filter .25s}
+.fan.has-sel .sec:not(.sel) .sec-in{opacity:.5}
+.sec.sel .ring{opacity:1}
+.sec text{fill:var(--red);font-family:var(--f);font-weight:500;letter-spacing:-.01em}
+.sec .sv{font-family:var(--px);font-weight:400;letter-spacing:0}
+.sec .sv .u{font-family:var(--f);font-weight:600}
+.sec.ghost .sp{fill:#5a1820;stroke:#5a1820}
+.sec.ghost text{fill:var(--soft)}
+#hint{position:absolute;left:0;right:0;bottom:4px;text-align:center;font-size:12.5px;color:var(--soft);pointer-events:none;transition:opacity .3s}
+.is-focus #hint{opacity:0}
+@media (hover:hover){
+  .cat:hover{filter:brightness(1.1)}
+  body:not(.is-focus) .cat:hover{transform:scale(1.025)}
+  .sec:hover .sec-in{filter:brightness(.94)}
+}
+
+/* 금액 고치기 */
+#editor{position:absolute;z-index:2;left:50%;bottom:0;width:min(100%,620px);height:124px;transform:translate(-50%,28px);opacity:0;pointer-events:none;display:flex;flex-direction:column;justify-content:flex-end;transition:opacity .35s,transform .5s cubic-bezier(.2,.8,.2,1)}
+.is-focus #editor{opacity:1;transform:translate(-50%,0);pointer-events:auto}
+#ed-hint{align-self:center;background:rgba(255,255,255,.1);border-radius:999px;padding:9px 16px;color:var(--white);font-size:13px;margin-bottom:6px}
+#ed-form{background:rgba(18,5,8,.9);border:1px solid var(--line);border-radius:22px;padding:12px 14px;display:flex;flex-direction:column;gap:6px}
+.ed-head{display:flex;align-items:center;gap:10px;min-width:0}
+#ed-name{font-weight:600;font-size:16px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#ed-sub{color:var(--soft);font-size:12.5px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.chip{font:500 11px/1 var(--f);padding:5px 8px;border-radius:999px;border:1px solid var(--line);color:var(--soft);letter-spacing:.02em;flex:none}
+.chip.todo{color:var(--red-hi);border-color:var(--red-hi)}
+.ed-row{display:flex;align-items:center;gap:8px;margin-top:4px}
+.step{width:42px;height:42px;border-radius:14px;border:0;background:var(--red);color:var(--white);font:400 22px/1 var(--px);cursor:pointer;display:grid;place-items:center;transition:background .2s,transform .15s}
+.step:hover{background:#ec3a2d}
+.step:active{transform:scale(.94)}
+.field{position:relative;flex:1 1 auto;min-width:0}
+.field input{width:100%;height:42px;border-radius:14px;border:1.5px solid var(--line);background:rgba(255,255,255,.07);color:var(--white);font:400 22px/1 var(--px);padding:0 40px 0 14px;text-align:right}
+.field input:focus{border-color:var(--red-hi);outline:none}
+.field .unit{position:absolute;right:14px;top:50%;transform:translateY(-50%);color:var(--soft);font-size:14px;pointer-events:none}
+.undo{margin-left:auto;background:none;border:0;color:var(--red-hi);font-size:12px;cursor:pointer;text-decoration:underline;text-underline-offset:3px;padding:4px;white-space:nowrap;flex:none}
+
+.errbox{background:var(--white);color:#a51d13;padding:10px 14px;border-radius:12px;font-size:12px;line-height:1.5;white-space:pre-wrap;overflow-wrap:anywhere}
+#note{margin:0;color:var(--soft);font-size:11.5px;text-align:center;text-wrap:balance;opacity:.8}
+
+@media (min-width:900px){
+  .total{margin-top:calc(var(--u)*5)}
+  /* 넓은 화면: 금액 칸을 왼쪽 옆으로 빼서 부채꼴이 쓸 높이를 확보 */
+  #editor{left:6px;bottom:auto;top:50%;width:318px;height:auto;max-height:100%;transform:translate(-28px,-50%);justify-content:center}
+  .is-focus #editor{transform:translate(0,-50%)}
+  #ed-hint{border-radius:20px;text-align:center;line-height:1.5;margin:0}
+}
+@media (max-width:640px){
+  #editor{height:146px}
+  .tn{font-size:clamp(40px,15vw,96px)}
+}
+@media (prefers-reduced-motion:reduce){
+  #splash{display:none}
+  .rise{animation:none}
+  .cat,.sec-in,#editor{transition:none}
+}
+</style>
+<style>html{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}</style>
+</head>
+<body>
+
+<div id="splash" aria-hidden="true">
+  <svg viewBox="0 0 20 20"><path fill="#fff" d="M7 0h6v7h7v6h-7v7H7v-7H0V7h7z"/></svg>
+</div>
+
+<div id="app">
+  <noscript><div class="errbox">이 화면에서는 스크립트가 꺼져 있어서 그래프를 그릴 수 없어요.</div></noscript>
+  <div id="err" class="errbox" hidden></div>
+
+  <header id="top">
+    <div id="title-block" class="brand">
+      <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 0h6v7h7v6h-7v7H7v-7H0V7h7z"/></svg>
+      <b>swiss trip budget</b>
+    </div>
+    <div id="focus-block" hidden>
+      <button class="btn" id="back" type="button">← 전체</button>
+      <div>
+        <div class="ftitle"><svg id="f-ico" viewBox="0 0 9 9" aria-hidden="true"><path id="f-ico-p" d=""/></svg><span id="f-name"></span><span id="f-amt"><span class="px" id="f-amt-n"></span>만원</span></div>
+        <div id="f-share"></div>
+      </div>
+    </div>
+    <button class="btn" id="reset" type="button" hidden>처음 값으로</button>
+  </header>
+
+  <h2 class="total" id="total" aria-label="인당 합계"><span class="tl">total</span><span class="tn" id="t-total">6,874,096</span></h2>
+
+  <main id="stage">
+    <svg id="svg" role="group" aria-label="항목별 인당 예산 꽃잎 그래프"></svg>
+    <div id="hint">꽃잎을 눌러 보세요 · 인당 · 단위 만원</div>
+    <div id="editor">
+      <div id="ed-hint">부채꼴을 누르면 금액을 바꿀 수 있어요</div>
+      <div id="ed-form" hidden>
+        <div class="ed-head"><span class="chip" id="ed-chip"></span><strong id="ed-name"></strong><button class="undo" id="ed-undo" type="button" hidden></button></div>
+        <div id="ed-sub"></div>
+        <div class="ed-row">
+          <button class="step" id="ed-minus" type="button" aria-label="1만원 줄이기">-</button>
+          <label class="field"><span style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">금액(원)</span><input id="ed-input" type="text" inputmode="numeric" autocomplete="off" spellcheck="false"><span class="unit">원</span></label>
+          <button class="step" id="ed-plus" type="button" aria-label="1만원 늘리기">+</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <p id="note">2026-10-09 기준 · 보통 시나리오 · CHF 1 = 1,690원 · 고친 금액은 이 기기에만 저장돼요</p>
+</div>
+
+<script>
+(function(){
+'use strict';
+function showErr(m){var b=document.getElementById('err');if(!b)return;b.hidden=false;b.textContent+=m+'\n';}
+window.addEventListener('error',function(e){showErr('오류: '+e.message+' @'+e.lineno+':'+e.colno);});
+window.addEventListener('unhandledrejection',function(e){showErr('오류(비동기): '+(e.reason&&e.reason.message||e.reason));});
+var NS='http://www.w3.org/2000/svg';
+var RM=false; try{RM=window.matchMedia('(prefers-reduced-motion: reduce)').matches;}catch(e){}
+var KEY='swiss-wheel-budget-v1';
+
+/* ── 항목 아이콘(9×9 픽셀) ── */
+var ICONS={
+ fee:['.........','#########','#.......#','#..###..#','#..#.#..#','#..###..#','#.......#','#########','.........'],
+ food:['#.#.#.##.','#.#.#.##.','#.#.#.##.','#####.##.','..#...##.','..#....#.','..#....#.','..#....#.','..#....#.'],
+ air:['....#....','...###...','...###...','#########','.#######.','...###...','...###...','..#####..','.........'],
+ act:['..#####..','.#######.','#########','#.#...#.#','.#.....#.','..#...#..','...#.#...','....#....','....#....'],
+ stay:['....#....','...###...','..#####..','.#######.','#########','.#######.','.###.###.','.###.###.','.###.###.'],
+ pass:['.#######.','.#.....#.','.#.###.#.','.#.....#.','.#######.','.#.....#.','.#######.','..#...#..','.##...##.'],
+ etc:['#########','#.......#','#...#...#','#...#...#','#.#####.#','#...#...#','#...#...#','#.......#','#########'],
+ tel:['..#####..','..#...#..','..#...#..','..#...#..','..#...#..','..#...#..','..#...#..','..#.#.#..','..#####..']
+};
+function iconBox(rows){var a=99,b=-1;rows.forEach(function(r){var i=r.indexOf('#'),j=r.lastIndexOf('#');if(i>=0&&i<a)a=i;if(j>b)b=j;});return {c0:a,w:b-a+1};}
+/* 픽셀 그림 → 경로(가로 줄 단위로 묶어 이음매가 안 보이게) */
+function pxPath(rows,u,ox,oy){
+  var d='';
+  for(var r=0;r<rows.length;r++){
+    var row=rows[r],c=0;
+    while(c<row.length){
+      if(row.charAt(c)==='#'){var s=c;while(c<row.length&&row.charAt(c)==='#')c++;d+='M'+f2(ox+s*u)+' '+f2(oy+r*u)+'h'+f2((c-s)*u)+'v'+f2(u)+'h'+f2(-(c-s)*u)+'z';}
+      else c++;
+    }
+  }
+  return d;
+}
+
+/* ── 데이터: 노션 «항목별 예산 표» 보통 시나리오 (원) ── */
+var CATS=[
+ {id:'fee',name:'참가비',icon:'fee',items:[
+  {id:'fee1',name:'참가비 선입금',l:['참가비','선입금'],sub:'건축캠프 참가비 1차',v:1000000,st:'확정',ph:'camp'},
+  {id:'fee2',name:'참가비 잔금',l:['참가비','잔금'],sub:'건축캠프 참가비 나머지',v:1550000,st:'확정',ph:'camp'}]},
+ {id:'food',name:'식비',icon:'food',items:[
+  {id:'food1',name:'캠프 자유식사 21끼',l:['캠프','자유식사'],sub:'11/6–14 · 자유식사 21끼',v:840000,st:'추정',ph:'camp'},
+  {id:'food2',name:'간식·음료·커피',l:['간식·음료','커피'],sub:'캠프 기간',v:80000,st:'추정',ph:'camp'},
+  {id:'food3',name:'연장 구간 식비',l:['연장 구간','식비'],sub:'11/14 저녁 ~ 11/19 아침 · 약 14끼',v:515450,st:'추정',ph:'ext'}]},
+ {id:'air',name:'항공',icon:'air',items:[
+  {id:'air1',name:'에미레이트 왕복',l:['에미레이트','왕복'],sub:'인천→리옹 11/5 · 취리히→인천 11/19 · 경유 1회',v:1241700,st:'견적',ph:'ext'}]},
+ {id:'act',name:'액티비티',icon:'act',items:[
+  {id:'act1',name:'패러글라이딩 비행',l:['패러글라이딩','비행'],sub:'클래식 비행 CHF 240',v:405600,st:'견적',ph:'ext'},
+  {id:'act2',name:'패러글라이딩 사진',l:['패러글라이딩','사진'],sub:'CHF 40',v:67600,st:'견적',ph:'ext'},
+  {id:'act3',name:'고르너그라트 열차 편도',l:['고르너그라트','열차 편도'],sub:'패스가 있으면 반값 · CHF 25.5',v:43095,st:'견적',ph:'ext'},
+  {id:'act4',name:'융프라우요흐 (11/16)',l:['융프라우요흐','11/16'],sub:'아직 안 정함 · 예상 25–38만원 (CHF 149–224)',v:0,st:'미정',ph:'ext'}]},
+ {id:'stay',name:'숙박',icon:'stay',items:[
+  {id:'stay1',name:'인터라켄 3박',l:['인터라켄','3박'],sub:'11/14–17 · 에어비앤비',v:277926,st:'확정',ph:'ext'},
+  {id:'stay2',name:'체르마트 1박',l:['체르마트','1박'],sub:'11/17–18 · 에어비앤비',v:142153,st:'확정',ph:'ext'},
+  {id:'stay3',name:'취리히 1박',l:['취리히','1박'],sub:'11/18–19 · ibis budget Zurich City West · 무료취소형',v:85812,st:'견적',ph:'ext'}]},
+ {id:'pass',name:'교통·패스',icon:'pass',items:[
+  {id:'pass1',name:'스위스 트래블 패스 3일',l:['스위스 패스','3일'],sub:'Flex 유스 · 2등석 · CHF 204',v:344760,st:'견적',ph:'ext'},
+  {id:'pass2',name:'패스 밖 날 교통비',l:['패스 밖 날','교통비'],sub:'패스 3일이 덮지 않는 날 · 아직 계산 전',v:0,st:'미정',ph:'ext'}]},
+ {id:'etc',name:'기타',icon:'etc',items:[
+  {id:'etc1',name:'도시세 (캠프 8박)',l:['도시세','캠프 8박'],sub:'숙소가 따로 걷는 세금',v:50000,st:'추정',ph:'camp'},
+  {id:'etc2',name:'개인 지출',l:['개인 지출','책·엽서'],sub:'책·카탈로그·엽서',v:150000,st:'추정',ph:'camp'},
+  {id:'etc3',name:'여행자보험',l:['여행자보험','연장 구간'],sub:'연장 구간 + 패러글라이딩 특약',v:0,st:'미정',ph:'ext'},
+  {id:'etc4',name:'현지 교통·입장료',l:['현지 교통','·입장료'],sub:'취리히 공항 이동, 에쉬넨호 곤돌라 등',v:0,st:'미정',ph:'ext'}]},
+ {id:'tel',name:'통신·준비',icon:'tel',items:[
+  {id:'tel1',name:'통신 eSIM',l:['통신','eSIM'],sub:'캠프 기간 데이터',v:30000,st:'추정',ph:'camp'},
+  {id:'tel2',name:'준비물',l:['준비물','어댑터 등'],sub:'멀티 어댑터 등',v:50000,st:'추정',ph:'camp'}]}
+];
+
+/* ── 기하 ── */
+var R=560,R0=78,GAPH=4,C_D=28,C_L=20,C_F=18,R_IN_L=R0+10,MIN_T=64,MAX_OUT=R-24;
+var FAN_RI=R+22,FAN_MIN=140,FAN_EXTRA=110,FAN_SIDE=4;
+var AW={1:36,2:28,3:22,4:18};
+var REF_MAX=2550000,STEP=10000;
+
+function rad(d){return d*Math.PI/180;}
+function P(r,deg){return [r*Math.cos(rad(deg)),r*Math.sin(rad(deg))];}
+function f2(n){return (Math.round(n*100)/100).toString();}
+function f(p){return f2(p[0])+' '+f2(p[1]);}
+function clamp(v,a,b){return v<a?a:v>b?b:v;}
+function wrap(a){return ((a+180)%360+360)%360-180;}
+/* 둥근 모서리 부채꼴: 안쪽으로 줄인 도형 + 같은 색 둥근 선(stroke) */
+function petal(rIn,rOut,t1,t2,side,c){
+  var ri=rIn+c,ro=rOut-c,d=side+c;
+  if(ro<=ri+1) return '';
+  var a=function(r){return Math.asin(Math.min(0.99,d/r))*180/Math.PI;};
+  var p1=P(ri,t1+a(ri)),p2=P(ro,t1+a(ro)),p3=P(ro,t2-a(ro)),p4=P(ri,t2-a(ri));
+  return 'M'+f(p1)+' L'+f(p2)+' A'+f2(ro)+' '+f2(ro)+' 0 0 1 '+f(p3)+' L'+f(p4)+' A'+f2(ri)+' '+f2(ri)+' 0 0 0 '+f(p1)+' Z';
+}
+
+/* ── 수 표기 ── */
+function fmt(n){return Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g,',');}
+function manInt(v){return fmt(v/10000);}
+function man(v){
+  var m=v/10000; if(m>=100) return fmt(m);
+  var r=Math.round(m*10)/10; if(r>=100) return fmt(r);
+  return r%1===0?r.toFixed(0):r.toFixed(1);
+}
+function parseWon(s){
+  s=String(s).replace(/[,\s₩원]/g,''); if(!s) return NaN;
+  var m=/^(\d+(?:\.\d+)?)만$/.exec(s); if(m) return Math.round(parseFloat(m[1])*10000);
+  if(/^\d+$/.test(s)) return parseInt(s,10);
+  return NaN;
+}
+
+/* ── 상태 ── */
+var S={cat:null,item:null,focusP:0,fanFs:28};
+var cam={s:1,rot:0,cx:0,cy:0};
+var open={},grow={},disp={},vals={},defs={},byId={},itemById={};
+var W=1,H=1,petNumFs=62,petLabFs=19,petIu=4;
+var saved={}; try{saved=JSON.parse(localStorage.getItem(KEY)||'{}')||{};}catch(e){saved={};}
+
+CATS.forEach(function(c,i){
+  c.i=i; c.t1=-90+45*i; c.t2=c.t1+45; c.tc=(c.t1+c.t2)/2;
+  byId[c.id]=c; open[c.id]=0; grow[c.id]=RM?1:0; c.val=0;
+  c.items.forEach(function(it){
+    it.cat=c; itemById[it.id]=it; defs[it.id]=it.v;
+    var sv=saved[it.id];
+    vals[it.id]=(typeof sv==='number'&&isFinite(sv)&&sv>=0)?Math.min(99999999,Math.round(sv)):it.v;
+    disp[it.id]=vals[it.id];
+  });
+});
+
+/* ── 움직임 엔진 ── */
+var EASE={
+  lin:function(p){return p;},
+  out:function(p){return 1-Math.pow(1-p,3);},
+  io:function(p){return p<.5?4*p*p*p:1-Math.pow(-2*p+2,3)/2;},
+  back:function(p){var c1=1.35,c3=c1+1;return 1+c3*Math.pow(p-1,3)+c1*Math.pow(p-1,2);}
+};
+var tws=[],raf=0;
+function need(){if(!raf) raf=requestAnimationFrame(loop);}
+function tw(o,k,to,dur,opt){
+  opt=opt||{};
+  for(var i=tws.length-1;i>=0;i--) if(tws[i].o===o&&tws[i].k===k) tws.splice(i,1);
+  if(RM||dur<=0){o[k]=to;need();return;}
+  tws.push({o:o,k:k,from:o[k],to:to,t0:performance.now()+(opt.delay||0),d:dur,e:opt.ease||EASE.io});
+  need();
+}
+function loop(now){
+  raf=0;var alive=false;
+  for(var i=0;i<tws.length;i++){
+    var t=tws[i],p=(now-t.t0)/t.d;
+    if(p<0){alive=true;continue;}
+    if(p>=1){t.o[t.k]=t.to;tws.splice(i,1);i--;continue;}
+    t.o[t.k]=t.from+(t.to-t.from)*t.e(p);alive=true;
+  }
+  render();
+  if(alive) raf=requestAnimationFrame(loop);
+}
+
+/* ── DOM ── */
+var $=function(id){return document.getElementById(id);};
+var app=$('app'),svg=$('svg'),stage=$('stage');
+function el(n,a,p){var e=document.createElementNS(NS,n);if(a)for(var k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e;}
+
+var bgRect=el('rect',{x:0,y:0,width:1,height:1,fill:'transparent',id:'bg'},svg);
+var camG=el('g',{id:'cam'},svg);
+var petalsG=el('g',null,camG),fansG=el('g',null,camG);
+
+CATS.forEach(function(c){
+  var g=el('g',{class:'cat',tabindex:0,role:'button','data-id':c.id},petalsG);
+  c.g=g;
+  var inn=el('g',{class:'cat-in'},g);c.inn=inn;
+  c.dark=el('path',{class:'dark',d:petal(R0,R,c.t1,c.t2,GAPH,C_D),'stroke-width':2*C_D,'stroke-linejoin':'round'},inn);
+  c.light=el('path',{class:'light','stroke-width':2*C_L,'stroke-linejoin':'round'},inn);
+  c.lab=el('g',{class:'plab out'},inn);
+  c.ico=el('path',{class:'pico'},c.lab);
+  c.num=el('text',{class:'pn','text-anchor':'middle'},c.lab);
+  c.nm=el('text',{class:'pl','text-anchor':'middle'},c.lab);
+  c.nm.textContent=c.name;
+  c.labCls='out';
+
+  var fg=el('g',{class:'fan'},fansG);fg.style.display='none';
+  c.fan=fg;c.fanOn=false;
+  c.items.forEach(function(it){
+    var s=el('g',{class:'sec',tabindex:0,role:'button','data-item':it.id},fg);
+    var si=el('g',{class:'sec-in'},s);
+    it.s=s;
+    it.ring=el('path',{class:'ring'},si);
+    it.path=el('path',{class:'sp'},si);
+    it.lab=el('g',{class:'slab'},si);
+    it.tn=it.l.map(function(txt){var t=el('text',{'text-anchor':'middle'},it.lab);t.textContent=txt;return t;});
+    it.tv=el('text',{class:'sv','text-anchor':'middle'},it.lab);
+    it.tvn=el('tspan',null,it.tv);
+    it.tvu=el('tspan',{dx:3,class:'u'},it.tv);it.tvu.textContent='만';
+    it.ghost=null;it.lastN='';
+  });
+});
+
+/* ── 카메라 ── */
+function overviewCam(){return {s:Math.min(W,H)/2/(R+54),rot:0,cx:0,cy:0};}
+function focusCam(c,curRot){
+  var land=W/H>1.1,cands=land?[0,180]:[-90,90];
+  var best=cands[0],bd=1e9;
+  cands.forEach(function(p){var d=Math.abs(wrap(p-c.tc));if(d<bd){bd=d;best=p;}});
+  var rot=wrap(best-c.tc);
+  if(curRot!=null) rot=curRot+wrap(rot-curRot);
+  var n=c.items.length,aw=AW[n],a0=c.tc-n*aw/2,pts=[];
+  var ro=FAN_RI+FAN_MIN+FAN_EXTRA;
+  for(var k=0;k<=n*4;k++){var a=a0+n*aw*k/(n*4);pts.push(P(FAN_RI,a));pts.push(P(ro,a));}
+  for(var j=0;j<=6;j++){pts.push(P(R,c.t1+(c.t2-c.t1)*j/6));}
+  pts.push(P(R0,c.t1));pts.push(P(R0,c.t2));
+  var cs=Math.cos(rad(rot)),sn=Math.sin(rad(rot));
+  var minx=1e9,maxx=-1e9,miny=1e9,maxy=-1e9;
+  pts.forEach(function(p){
+    var x=p[0]*cs-p[1]*sn,y=p[0]*sn+p[1]*cs;
+    if(x<minx)minx=x;if(x>maxx)maxx=x;if(y<miny)miny=y;if(y>maxy)maxy=y;
+  });
+  var side=false;try{side=window.matchMedia('(min-width:900px)').matches;}catch(e){}
+  var edH=side?0:($('editor').offsetHeight||124);
+  var padL=side?30+318:30,padR=30,padT=34,padB=side?30:18+edH;
+  var aW=Math.max(40,W-padL-padR),aH=Math.max(40,H-padT-padB);
+  var s=Math.min(aW/(maxx-minx),aH/(maxy-miny),0.95);
+  var offX=(padL+aW/2)-W/2,offY=(padT+aH/2)-H/2;
+  return {s:s,rot:rot,cx:(minx+maxx)/2-offX/s,cy:(miny+maxy)/2-offY/s};
+}
+function setCam(t){cam.s=t.s;cam.rot=t.rot;cam.cx=t.cx;cam.cy=t.cy;}
+function goCam(t,dur){
+  ['s','rot','cx','cy'].forEach(function(k){tw(cam,k,t[k],dur,{ease:EASE.io});});
+}
+function applyFonts(){
+  var s0=overviewCam().s;
+  petNumFs=Math.max(62,21/s0);petLabFs=Math.max(19,10/s0);petIu=petNumFs*0.065;
+  CATS.forEach(function(c){
+    c.num.setAttribute('font-size',f2(petNumFs));c.nm.setAttribute('font-size',f2(petLabFs));
+    var rows=ICONS[c.icon],b=iconBox(rows);
+    c.ico.setAttribute('d',pxPath(rows,petIu,-b.w*petIu/2-b.c0*petIu,0));
+  });
+}
+function applyFanFonts(){
+  var fs=S.fanFs,vfs=fs*1.42;
+  CATS.forEach(function(c){c.items.forEach(function(it){
+    it.tn.forEach(function(t){t.setAttribute('font-size',f2(fs));});
+    it.tv.setAttribute('font-size',f2(vfs));
+    it.tvu.setAttribute('font-size',f2(fs*0.8));
+  });});
+}
+function targetCam(){
+  if(S.cat){var t=focusCam(byId[S.cat],cam.rot);S.fanFs=clamp(12.5/t.s,26,34);return t;}
+  return overviewCam();
+}
+function layout(){
+  var r=stage.getBoundingClientRect();
+  W=Math.max(1,Math.round(r.width));H=Math.max(1,Math.round(r.height));
+  svg.setAttribute('viewBox','0 0 '+W+' '+H);
+  bgRect.setAttribute('width',W);bgRect.setAttribute('height',H);
+  applyFonts();
+  var t=targetCam();
+  var moving=tws.some(function(w){return w.o===cam;});
+  if(moving) goCam(t,500); else setCam(t);
+  applyFanFonts();
+  need();
+}
+
+/* ── 그리기 ── */
+function setTxt(node,s){if(node.textContent!==s) node.textContent=s;}
+function render(){
+  camG.setAttribute('transform','translate('+f2(W/2)+' '+f2(H/2)+') scale('+cam.s+') translate('+f2(-cam.cx)+' '+f2(-cam.cy)+') rotate('+f2(cam.rot)+')');
+  var tot=0,unrot='rotate('+f2(-cam.rot)+')';
+  CATS.forEach(function(c){
+    var v=0;
+    c.items.forEach(function(it){v+=disp[it.id];});
+    c.val=v;tot+=v;
+  });
+  var vmax=REF_MAX;CATS.forEach(function(c){if(c.val>vmax)vmax=c.val;});
+  /* 꽃잎 안 글자 묶음: 아이콘 · 숫자 · 이름 */
+  var iconH=9*petIu,gap1=petNumFs*0.16,dh=petNumFs*0.8,gap2=petNumFs*0.18,nameH=petLabFs;
+  var blockH=iconH+gap1+dh+gap2+nameH;
+  CATS.forEach(function(c){
+    var g=grow[c.id],fr=Math.sqrt(Math.max(0,c.val)/vmax);
+    var rOutL=R_IN_L+(44+(MIN_T-44)*g)+(MAX_OUT-R_IN_L-MIN_T)*fr*g;
+    c.light.setAttribute('d',petal(R_IN_L,rOutL,c.t1,c.t2,GAPH+12,C_L));
+    var inside=rOutL>=300+blockH/2+12;
+    var rt=inside?300:Math.min(rOutL+blockH/2+24,R-blockH/2-12);
+    var p=P(rt,c.tc);
+    c.lab.setAttribute('transform','translate('+f2(p[0])+' '+f2(p[1])+') '+unrot);
+    var cls=inside?'in':'out';
+    if(c.labCls!==cls){c.labCls=cls;c.lab.setAttribute('class','plab '+cls);}
+    var top=-blockH/2;
+    c.ico.setAttribute('transform','translate(0 '+f2(top)+')');
+    c.num.setAttribute('y',f2(top+iconH+gap1+dh));
+    c.nm.setAttribute('y',f2(top+iconH+gap1+dh+gap2+nameH*0.82));
+    setTxt(c.num,manInt(c.val));
+    var op=(S.cat===c.id)?1:1-0.72*S.focusP;
+    c.inn.setAttribute('opacity',f2(op));
+    renderFan(c);
+  });
+  setTxt($('t-total'),fmt(tot));
+  if(S.cat){
+    var c=byId[S.cat];
+    setTxt($('f-amt-n'),man(c.val));
+    setTxt($('f-share'),'전체의 '+(tot>0?(Math.round(c.val/tot*1000)/10).toFixed(1):'0.0')+'% · 세부 '+c.items.length+'개');
+  }
+}
+function renderFan(c){
+  var o=open[c.id],g=c.fan;
+  if(o<0.003){if(c.fanOn){g.style.display='none';c.fanOn=false;}return;}
+  if(!c.fanOn){g.style.display='';c.fanOn=true;}
+  g.style.pointerEvents=(S.cat===c.id&&o>0.5)?'auto':'none';
+  var n=c.items.length,aw=AW[n],a0=c.tc-n*aw/2,sp=EASE.back(Math.min(1,o*1.15));
+  var vmax=1;c.items.forEach(function(it){if(disp[it.id]>vmax)vmax=disp[it.id];});
+  var fs=S.fanFs,vfs=fs*1.42,lh=fs*1.16,gapS=fs*0.28,unrot='rotate('+f2(-cam.rot)+')';
+  c.items.forEach(function(it,k){
+    var cen=a0+aw*(k+.5),ang=c.tc+(cen-c.tc)*sp;
+    var tp=EASE.out(clamp((o-0.05*k)/(1-0.05*(n-1)),0,1));
+    var th=(FAN_MIN+FAN_EXTRA*Math.sqrt(disp[it.id]/vmax))*tp;
+    var d=petal(FAN_RI,FAN_RI+th,ang-aw/2,ang+aw/2,FAN_SIDE,C_F);
+    it.path.setAttribute('d',d);it.ring.setAttribute('d',d);
+    it.s.setAttribute('opacity',f2(clamp(tp*3,0,1)));
+    var p=P(FAN_RI+th/2,ang);
+    it.lab.setAttribute('transform','translate('+f2(p[0])+' '+f2(p[1])+') '+unrot);
+    it.lab.setAttribute('opacity',f2(clamp((tp-0.75)/0.25,0,1)));
+    var nn=it.l.length,bh=nn*lh+gapS+vfs*0.8,y=-bh/2;
+    it.tn.forEach(function(t,j){t.setAttribute('y',f2(y+fs*0.86+j*lh));});
+    it.tv.setAttribute('y',f2(y+nn*lh+gapS+vfs*0.8));
+    var ghost=vals[it.id]===0;
+    if(it.ghost!==ghost){it.ghost=ghost;it.s.setAttribute('class','sec'+(ghost?' ghost':'')+(S.item===it.id?' sel':''));}
+    var n1,showU=true;
+    if(ghost){n1=it.st==='미정'?'미정':'0';showU=it.st!=='미정';}else n1=man(disp[it.id]);
+    setTxt(it.tvn,n1);
+    it.tvu.style.display=showU?'':'none';
+  });
+}
+
+/* ── 상호작용 ── */
+function setSecClasses(){
+  CATS.forEach(function(c){
+    c.fan.setAttribute('class','fan'+((S.cat===c.id&&S.item)?' has-sel':''));
+    c.items.forEach(function(it){
+      it.s.setAttribute('class','sec'+(vals[it.id]===0?' ghost':'')+(S.item===it.id?' sel':''));
+      it.ghost=vals[it.id]===0;
+    });
+  });
+}
+function refreshAria(){
+  CATS.forEach(function(c){
+    c.g.setAttribute('aria-label',c.name+' '+man(c.items.reduce(function(a,it){return a+vals[it.id];},0))+'만원, 누르면 세부 항목을 펼칩니다');
+    c.items.forEach(function(it){
+      it.s.setAttribute('aria-label',it.name+' '+(vals[it.id]===0&&it.st==='미정'?'미정':man(vals[it.id])+'만원')+', 누르면 금액을 고칩니다');
+    });
+  });
+}
+function showHeader(){
+  var fcs=!!S.cat;
+  var tb=$('title-block'),fb=$('focus-block');
+  tb.hidden=fcs;fb.hidden=!fcs;
+  var shown=fcs?fb:tb;shown.classList.remove('rise');void shown.offsetWidth;shown.classList.add('rise');
+  if(fcs){
+    var c=byId[S.cat];
+    setTxt($('f-name'),c.name);
+    $('f-ico-p').setAttribute('d',pxPath(ICONS[c.icon],1,0,0));
+  }
+}
+function selectCat(id){
+  if(S.cat===id){clearCat();return;}
+  var c=byId[id],prev=S.cat;
+  S.cat=id;S.item=null;
+  app.classList.add('is-focus');document.body.classList.add('is-focus');
+  var t=focusCam(c,cam.rot);S.fanFs=clamp(12.5/t.s,26,34);applyFanFonts();
+  goCam(t,950);
+  tw(S,'focusP',1,600,{ease:EASE.out});
+  if(prev) tw(open,prev,0,380,{ease:EASE.io});
+  tw(open,id,1,900,{ease:EASE.lin,delay:prev?260:420});
+  setSecClasses();showEditor();showHeader();need();
+}
+function clearCat(){
+  var prev=S.cat;if(!prev) return;
+  S.cat=null;S.item=null;
+  app.classList.remove('is-focus');document.body.classList.remove('is-focus');
+  var o=overviewCam();o.rot=Math.round(cam.rot/360)*360;
+  goCam(o,900);
+  tw(S,'focusP',0,500,{ease:EASE.out});
+  tw(open,prev,0,420,{ease:EASE.io});
+  setSecClasses();showEditor();showHeader();need();
+}
+function selectItem(id){
+  if(S.item===id){S.item=null;}else S.item=id;
+  setSecClasses();showEditor();need();
+}
+function showEditor(){
+  var it=S.item?itemById[S.item]:null;
+  $('ed-hint').hidden=!!it;$('ed-form').hidden=!it;
+  if(!it) return;
+  setTxt($('ed-name'),it.name);setTxt($('ed-sub'),it.sub);
+  var chip=$('ed-chip'),st=it.st==='미정'&&vals[it.id]>0?'입력함':it.st;
+  setTxt(chip,st);chip.className='chip'+(st==='미정'?' todo':'');
+  var inp=$('ed-input');if(document.activeElement!==inp) inp.value=fmt(vals[it.id]);
+  updateUndo(it);
+}
+function updateUndo(it){
+  var u=$('ed-undo'),ch=vals[it.id]!==defs[it.id];
+  u.hidden=!ch;if(ch) u.textContent='처음 값 '+fmt(defs[it.id])+'원으로';
+}
+function updateReset(){
+  var n=0;for(var k in vals) if(vals[k]!==defs[k]) n++;
+  $('reset').hidden=n===0;
+}
+function persist(){
+  var o={};for(var k in vals) if(vals[k]!==defs[k]) o[k]=vals[k];
+  try{if(Object.keys(o).length) localStorage.setItem(KEY,JSON.stringify(o)); else localStorage.removeItem(KEY);}catch(e){}
+}
+function setVal(id,v){
+  v=clamp(Math.round(v),0,99999999);
+  vals[id]=v;tw(disp,id,v,450,{ease:EASE.out});
+  persist();updateReset();refreshAria();
+  var it=itemById[id];
+  if(S.item===id){showEditor();}
+  it.s.setAttribute('class','sec'+(v===0?' ghost':'')+(S.item===id?' sel':''));it.ghost=(v===0);
+}
+
+svg.addEventListener('click',function(e){
+  var t=e.target,sec=t.closest&&t.closest('.sec');
+  if(sec){selectItem(sec.getAttribute('data-item'));return;}
+  var cat=t.closest&&t.closest('.cat');
+  if(cat){selectCat(cat.getAttribute('data-id'));return;}
+  if(S.item){selectItem(S.item);}else if(S.cat){clearCat();}
+});
+svg.addEventListener('keydown',function(e){
+  if(e.key==='Enter'||e.key===' '){
+    var t=e.target;if(t&&t.classList&&(t.classList.contains('cat')||t.classList.contains('sec'))){e.preventDefault();t.dispatchEvent(new MouseEvent('click',{bubbles:true}));}
+  }
+});
+document.addEventListener('keydown',function(e){
+  if(e.key==='Escape'){
+    if(document.activeElement&&document.activeElement.id==='ed-input') document.activeElement.blur();
+    if(S.item){selectItem(S.item);}else if(S.cat){clearCat();}
+  }
+});
+$('back').addEventListener('click',clearCat);
+$('reset').addEventListener('click',function(){
+  CATS.forEach(function(c){c.items.forEach(function(it){vals[it.id]=defs[it.id];tw(disp,it.id,defs[it.id],450,{ease:EASE.out});});});
+  persist();updateReset();refreshAria();setSecClasses();showEditor();need();
+});
+var inp=$('ed-input');
+inp.addEventListener('focus',function(){setTimeout(function(){try{inp.select();}catch(e){}},0);});
+inp.addEventListener('input',function(){
+  var v=parseWon(inp.value);
+  if(!isNaN(v)&&S.item) setVal(S.item,v);
+});
+inp.addEventListener('blur',function(){if(S.item) inp.value=fmt(vals[S.item]);});
+inp.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();inp.blur();}});
+$('ed-minus').addEventListener('click',function(){if(S.item){setVal(S.item,vals[S.item]-STEP);inp.value=fmt(vals[S.item]);}});
+$('ed-plus').addEventListener('click',function(){if(S.item){setVal(S.item,vals[S.item]+STEP);inp.value=fmt(vals[S.item]);}});
+$('ed-undo').addEventListener('click',function(){if(S.item){setVal(S.item,defs[S.item]);inp.value=fmt(vals[S.item]);}});
+
+/* ── 시작 ── */
+setSecClasses();refreshAria();updateReset();
+layout();
+var INTRO=RM?0:850; // 첫 화면(빨간 십자가)이 올라가는 동안 기다렸다가 꽃잎이 자란다
+if(!RM){
+  cam.rot=-22;tw(cam,'rot',0,1300,{ease:EASE.out,delay:INTRO});
+  CATS.forEach(function(c,i){tw(grow,c.id,1,1000,{ease:EASE.out,delay:INTRO+120+90*i});});
+}
+render();
+var rz=0;
+function onResize(){cancelAnimationFrame(rz);rz=requestAnimationFrame(layout);}
+if(window.ResizeObserver){new ResizeObserver(onResize).observe(stage);}else window.addEventListener('resize',onResize);
+if(document.fonts&&document.fonts.ready) document.fonts.ready.then(function(){need();});
+// 오프라인에서도 한글이 같게 보이도록, 화면에 쓰이는 글자를 미리 받아 둔다
+try{
+  var allText=app.textContent+"입력함0123456789,.만원";
+  CATS.forEach(function(c){allText+=c.name;c.items.forEach(function(it){allText+=it.name+it.l.join("")+it.sub+it.st;});});
+  if(document.fonts&&document.fonts.load){
+    ['400','500','600'].forEach(function(w){document.fonts.load(w+' 16px "Pretendard Variable"',allText).catch(function(){});});
+  }
+}catch(e){}
+})();
+</script>
+
+<script>
+if('serviceWorker' in navigator && (location.protocol==='https:'||location.hostname==='localhost')){
+  window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){});});
+}
+</script>
+</body>
+</html>
